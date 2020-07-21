@@ -11,6 +11,8 @@ import InfoBox from './InfoBox';
 import Map from './Map';
 import Table from './Table';
 import LineGraph from './LineGraph';
+import "leaflet/dist/leaflet.css";
+
 import {sortData} from './util.js';
 
 import './App.css';
@@ -22,6 +24,9 @@ function App() {
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
+  const [mapCenter, setMapCenter] = useState({ lat:34.80746 , lng: -40.4796 });
+  const [mapZoom, setMapZoom] = useState(3);
+
 
   // for Initial page load, show worldwide data
   useEffect(()=>{
@@ -63,7 +68,7 @@ function App() {
   const onCountryChange = async(event)=>{
     const countryCode = event.target.value;
 
-    console.log("DAAAHHHH........", countryCode)
+    // console.log("DAAAHHHH........", countryCode)
     setCountry(countryCode); 
 
     // https://disease.sh/v3/covid-19/all
@@ -81,6 +86,10 @@ function App() {
 
       // All of the data, from Country response
       setCountryInfo(data);
+
+      // set map to selected country
+      setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+      setMapZoom(4);
     })
   };
 
@@ -115,7 +124,8 @@ function App() {
       </div>
 
       { /* MAP */ }
-      <Map/>
+      <Map center={mapCenter}
+           zoom={mapZoom} />
       </div>
 
       <Card className="app__right">
