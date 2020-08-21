@@ -152,8 +152,8 @@ function App() {
         <CardContent>
           <h1>Live Cases By Country</h1>
           <Table countries={tableData} />
-          <h3>New {casesType} Worldwide</h3>
-          <LineGraph casesType={casesType} />
+          <h3 className="app__graphTitle">New {casesType} Worldwide</h3>
+          <LineGraph className="app__graph" casesType={casesType} />
         </CardContent>
       </Card>
     </div>
