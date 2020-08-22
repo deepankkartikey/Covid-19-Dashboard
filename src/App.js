@@ -20,7 +20,7 @@ import "./App.css";
 function App() {
   const [countries, setCountries] = useState([]);
   //"USA","UK","INDIA"
-  const [country, setCountry] = useState("worldwide");
+  const [country, setCountry] = useState('worldwide');
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
   const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
@@ -99,6 +99,7 @@ function App() {
           <FormControl className="app_dropdown">
             <Select
               variant="outlined"
+              value={country}
               onChange={onCountryChange}
               name={country}
             >
