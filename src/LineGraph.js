@@ -47,15 +47,14 @@ const options = {
   },
 };
 
-const buildChartData = (data, casesType = "cases") => {
-  let chartData = [];
+const buildChartData = (data, casesType = 'cases') => {
+  const chartData = [];
   let lastDataPoint;
 
-  //data[casesType].forEach(date => {
-  for (let date in data.cases) {
+    for(let date in data.cases){
     if (lastDataPoint) {
-      let newDataPoint = {
-        x: Date,
+      const newDataPoint = {
+        x: date,
         y: data[casesType][date] - lastDataPoint,
       };
       chartData.push(newDataPoint);
@@ -63,7 +62,7 @@ const buildChartData = (data, casesType = "cases") => {
     lastDataPoint = data[casesType][date];
   }
   return chartData;
-};
+}
 
 function LineGraph({ casesType = "cases", ...props }) {
   const [data, setData] = useState({});
@@ -107,3 +106,4 @@ function LineGraph({ casesType = "cases", ...props }) {
 }
 
 export default LineGraph;
+ 
