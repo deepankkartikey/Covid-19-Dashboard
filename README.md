@@ -10,14 +10,21 @@
 * Hosting URL: *[Covid 19 Tracker](https://covid19-tracker-7016e.web.app/)* 
 <br>
 
+### Detailed Functionalities
+* View Worldwide Cases
+* View Country-wise cases
+* Filter cases based on selected card
+    * Cases - in RED
+    * Recoveries - in GREEN
+    * Deaths - in RED
+* Live Cases by country (*sorted*)
+* Visualize Change in cases (*Linegraph*)
+
 ### Deploy On Firebase
 Tutorial URL: *[Deploy App on Firebase](https://dzone.com/articles/react-apps-firebase)*
 
 ### Available Scripts
 In the project directory, you can run:
-
-##### `npm run deploy`
-Creates a Production level build and deploys using **firebase**
 
 ##### `npm start`
 Runs the app in the development mode.<br />
