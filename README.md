@@ -10,6 +10,8 @@
 * Hosting URL: *[Covid 19 Tracker](https://covid19-tracker-7016e.web.app/)* 
 <br>
 
+![covid19](https://user-images.githubusercontent.com/17775859/95357227-3b476600-08e5-11eb-9fe3-2b2e747a5a72.JPG)
+
 ### Detailed Functionalities
 * View Worldwide Cases
 * View Country-wise cases
