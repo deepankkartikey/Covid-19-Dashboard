@@ -1,18 +1,18 @@
-## Covid 19 Tracker
-### Technologies Used
+### Covid 19 Tracker
+##### Technologies Used
 * React JS
 * API for Data *[Click here](https://corona.lmao.ninja/docs/)*
 * FireBase for Hosting
 * Material UI for Design
 
-### Goals Achieved
+##### Goals Achieved
 * Covid-19 Cases tracker with worldwide as well as country-specific data
 * Hosting URL: *[Covid 19 Tracker](https://covid19-tracker-7016e.web.app/)* 
 <br>
 
 ![covid19](https://user-images.githubusercontent.com/17775859/95357227-3b476600-08e5-11eb-9fe3-2b2e747a5a72.JPG)
 
-### Detailed Functionalities
+##### Detailed Functionalities
 * View Worldwide Cases
 * View Country-wise cases
 * Filter cases based on selected card
@@ -22,10 +22,10 @@
 * Live Cases by country (*sorted*)
 * Visualize Change in cases (*Linegraph*)
 
-### Deploy On Firebase
+##### Deploy On Firebase
 Tutorial URL: *[Deploy App on Firebase](https://dzone.com/articles/react-apps-firebase)*
 
-### Available Scripts
+##### Available Scripts
 In the project directory, you can run:
 
 ##### `npm start`
